@@ -1,0 +1,27 @@
+{
+  "name": "appofertas",
+  "version": "1.0.0",
+  "description": "app de ofertas com chat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulinhowoox/appofertas.git"
+  },
+  "author": "Paulinho Junior",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulinhowoox/appofertas/issues"
+  },
+  "homepage": "https://github.com/paulinhowoox/appofertas#readme",
+  "dependencies": {
+    "bower": "^1.7.1",
+    "grunt": "~0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-uglify": "^0.11.0"
+  }
+}

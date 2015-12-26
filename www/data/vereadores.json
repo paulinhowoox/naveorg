@@ -1,0 +1,212 @@
+[
+	{
+		"nome": "Anselmo Rolim Neto",
+		"partido": "PP",
+		"dataNascimento": "04/03/1972",
+		"ativo": "SIM",
+		"sala": "12",
+		"telefone": "3238-1142",
+		"email": "anselmoneto@camarasorocaba.sp.gov.br",
+		"imagem": "http://www.camarasorocaba.sp.gov.br:8080/sapl_documentos/parlamentar/fotos/1_foto_parlamentar",
+		"likes": 0
+	},
+	{
+		"nome": "Antonio Carlos Silvano",
+		"partido": "SDD",
+		"dataNascimento": "19/05/1948",
+		"ativo": "SIM",
+		"sala": "01",
+		"telefone": "3238-1131",
+		"email": "silvano@camarasorocaba.sp.gov.br",
+		"imagem": "http://www.camarasorocaba.sp.gov.br:8080/sapl_documentos/parlamentar/fotos/25_foto_parlamentar",
+		"likes": 0
+	},
+	{
+		"nome": "Francisco Carlos Silveira Leite",
+		"partido": "PT",
+		"dataNascimento": "21/02/1958",
+		"ativo": "SIM",
+		"sala": "17",
+		"telefone": "3238-1100",
+		"email": "vereadorcarlosleite@camarasorocaba.sp.gov.br",
+		"imagem": "http://www.camarasorocaba.sp.gov.br:8080/sapl_documentos/parlamentar/fotos/53_foto_parlamentar",
+		"likes": 0
+	},
+	{
+		"nome": "Gervino Cláudio Gonçalves",
+		"partido": "PR",
+		"dataNascimento": "14/07/1963",
+		"ativo": "SIM",
+		"sala": "16",
+		"telefone": "3238-1146",
+		"email": "claudiosorocaba1@camarasorocaba.sp.gov.br",
+		"imagem": "http://www.camarasorocaba.sp.gov.br:8080/sapl_documentos/parlamentar/fotos/9_foto_parlamentar",
+		"likes": 0
+	},
+	{
+		"nome": "José Francisco Martinez",
+		"partido": "PSDB",
+		"dataNascimento": "29/08/1953",
+		"ativo": "SIM",
+		"sala": "13",
+		"telefone": "3238-1143",
+		"email": "martinez@camarasorocaba.sp.gov.br",
+		"imagem": "http://www.camarasorocaba.sp.gov.br:8080/sapl_documentos/parlamentar/fotos/15_foto_parlamentar",
+		"likes": 0
+	},
+	{
+		"nome": "Fernando Alves Lisboa Dini",
+		"partido": "PMDB",
+		"dataNascimento": "27/01/1972",
+		"ativo": "SIM",
+		"sala": "18",
+		"telefone": "3238-1148",
+		"email": "fernandodini@camarasorocaba.sp.gov.br",
+		"imagem": "http://www.camarasorocaba.sp.gov.br:8080/sapl_documentos/parlamentar/fotos/47_foto_parlamentar",
+		"likes": 0
+	},
+	{
+		"nome": "Francisco França da Silva",
+		"partido": "PT",
+		"dataNascimento": "27/04/1964",
+		"ativo": "SIM",
+		"sala": "03",
+		"telefone": "3238-1133",
+		"email": "vereadorfranca@camarasorocaba.sp.gov.br",
+		"imagem": "http://www.camarasorocaba.sp.gov.br:8080/sapl_documentos/parlamentar/fotos/7_foto_parlamentar",
+		"likes": 0
+	},
+	{
+		"nome": "Irineu Donizeti de Toledo",
+		"partido": "PRB",
+		"dataNascimento": "20/07/1959",
+		"ativo": "SIM",
+		"sala": "11",
+		"telefone": "3238-1141",
+		"email": "vereadoririneu@camarasorocaba.sp.gov.br",
+		"imagem": "http://www.camarasorocaba.sp.gov.br:8080/sapl_documentos/parlamentar/fotos/11_foto_parlamentar",
+		"likes": 0
+	},
+	{
+		"nome": "Izídio de Brito Correia",
+		"partido": "PT",
+		"dataNascimento": "25/02/1961",
+		"ativo": "SIM",
+		"sala": "14",
+		"telefone": "3238-1144",
+		"email": "izidiopt@camarasorocaba.sp.gov.br",
+		"imagem": "http://www.camarasorocaba.sp.gov.br:8080/sapl_documentos/parlamentar/fotos/12_foto_parlamentar",
+		"likes": 0
+	},
+	{
+		"nome": "Jessé Loures de Moraes",
+		"partido": "PV",
+		"dataNascimento": "12/04/1968",
+		"ativo": "SIM",
+		"sala": "15",
+		"telefone": "3238-1145",
+		"email": "vereadorjesseloures@camarasorocaba.sp.gov.br",
+		"imagem": "http://www.camarasorocaba.sp.gov.br:8080/sapl_documentos/parlamentar/fotos/52_foto_parlamentar",
+		"likes": 0
+	},
+	{
+		"nome": "Jose Antonio Caldini Crespo",
+		"partido": "PV",
+		"dataNascimento": "05/06/1955",
+		"ativo": "SIM",
+		"sala": "19",
+		"telefone": "3238-1149",
+		"email": "jaccrespo@hotmail.com",
+		"imagem": "http://www.camarasorocaba.sp.gov.br:8080/sapl_documentos/parlamentar/fotos/14_foto_parlamentar",
+		"likes": 0
+	},
+	{
+		"nome": "Mário Marte Marinho Júnior",
+		"partido": "PPS",
+		"dataNascimento": "18/10/1953",
+		"ativo": "SIM",
+		"sala": "04",
+		"telefone": "3238-1134",
+		"email": "marinhomarte@camarasorocaba.sp.gov.br",
+		"imagem": "http://www.camarasorocaba.sp.gov.br:8080/sapl_documentos/parlamentar/fotos/18_foto_parlamentar",
+		"likes": 0
+	},
+	{
+		"nome": "Maurício Rodrigues da Silva",
+		"partido": "PPS",
+		"dataNascimento": "13/03/1976",
+		"ativo": "SIM",
+		"sala": "06",
+		"telefone": "3238-1136",
+		"email": "muridebrigadeiro@camarasorocaba.sp.gov.br",
+		"imagem": "http://www.camarasorocaba.sp.gov.br:8080/sapl_documentos/parlamentar/fotos/51_foto_parlamentar",
+		"likes": 0
+	},
+	{
+		"nome": "Neusa Maldonado Silveira",
+		"partido": "PSDB",
+		"dataNascimento": "28/09/1951",
+		"ativo": "SIM",
+		"sala": "20",
+		"telefone": "3238-1147",
+		"email": "vereadoraneusamaldonado@camarasorocaba.sp.gov.br",
+		"imagem": "http://www.camarasorocaba.sp.gov.br:8080/sapl_documentos/parlamentar/fotos/56_foto_parlamentar",
+		"likes": 0
+	},
+	{
+		"nome": "José Apolo da Silva",
+		"partido": "PSB",
+		"dataNascimento": "25/07/1959",
+		"ativo": "SIM",
+		"sala": "05",
+		"telefone": "3238-1125",
+		"email": "vereadorpastorapolo@camarasorocaba.sp.gov.br",
+		"imagem": "http://www.camarasorocaba.sp.gov.br:8080/sapl_documentos/parlamentar/fotos/50_foto_parlamentar",
+		"likes": 0
+	},
+	{
+		"nome": "Luis Santos Pereira Filho",
+		"partido": "PROS",
+		"dataNascimento": "04/01/1956",
+		"ativo": "SIM",
+		"sala": "07",
+		"telefone": "3238-1137",
+		"email": "vereadorluissantos@camarasorocaba.sp.gov.br",
+		"imagem": "http://www.camarasorocaba.sp.gov.br:8080/sapl_documentos/parlamentar/fotos/17_foto_parlamentar",
+		"likes": 0
+	},
+	{
+		"nome": "Rodrigo Maganhato",
+		"partido": "PP",
+		"dataNascimento": "31/01/1980",
+		"ativo": "SIM",
+		"sala": "02",
+		"telefone": "3238-1132",
+		"email": "vereadorrodrigomanga@camarasorocaba.sp.gov.br",
+		"imagem": "http://www.camarasorocaba.sp.gov.br:8080/sapl_documentos/parlamentar/fotos/48_foto_parlamentar",
+		"likes": 0
+	},
+	{
+		"nome": "Valdecir Moreira da Silva",
+		"partido": "PRP",
+		"dataNascimento": "01/10/1968",
+		"ativo": "SIM",
+		"sala": "09",
+		"telefone": "3238-1151",
+		"email": "vereadorwaldecirmorelly@camarasorocaba.sp.gov.br",
+		"imagem": "http://www.camarasorocaba.sp.gov.br:8080/sapl_documentos/parlamentar/fotos/49_foto_parlamentar",
+		"likes": 0
+	},
+	{
+		"nome": "Wanderley Diogo de Melo",
+		"partido": "PRP",
+		"dataNascimento": "08/10/1963",
+		"ativo": "SIM",
+		"sala": "10",
+		"telefone": "3238-1140",
+		"email": "vereadorwanderleydiogo@camarasorocaba.sp.gov.br",
+		"imagem": "http://www.camarasorocaba.sp.gov.br:8080/sapl_documentos/parlamentar/fotos/58_foto_parlamentar",
+		"likes": 0
+	}
+
+]
