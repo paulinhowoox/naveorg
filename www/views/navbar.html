@@ -1,0 +1,24 @@
+<nav>
+	<ul class="right hide-on-med-and-down">
+		<li><a href="#!">Câmara</a></li>
+		<li><a href="#!">Options</a></li>
+		<li><a href="/www/graficos.html">Gráficos</a></li>
+		<li><a href="#!">Leis</a></li>
+	</ul>
+	<ul id="slide-out" class="side-nav">
+		<li><a href="#!">Câmara</a></li>
+		<li><a href="#!">Options</a></li>
+		<li><a href="/www/graficos.html">Gráficos</a></li>
+		<li><a href="#!">Leis</a></li>
+	</ul>
+  	<a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+</nav>
+<script>
+	$(".button-collapse").sideNav();
+	// Show sideNav
+  	$('.button-collapse').sideNav({
+	      edge: 'right', // Choose the horizontal origin
+	      closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+	    }
+	);
+</script>

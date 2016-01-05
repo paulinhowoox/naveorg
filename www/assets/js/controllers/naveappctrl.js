@@ -1,10 +1,9 @@
 angular.module('naveapps.controllers', ['firebase'])
 
-.controller('HomeCtrl', function($scope, $http, $firebaseArray){
-	var itemRef = new Firebase("https://naveorg.firebaseio.com/");
+.controller('HomeCtrl', function($scope, $http){
 
 	$scope.title = "Nave Org";
-	$scope.naveapps = $firebaseArray(itemRef);
+	$scope.naveapps = [];
 	$scope.likes = 0;
 
 	loadCloudData();
@@ -16,7 +15,6 @@ angular.module('naveapps.controllers', ['firebase'])
 
 	$scope.saveData = function(ofertas){
 		saveData();
-
 		Materialize.toast('Curtiu isso!', 4000);
 	};
 
@@ -26,14 +24,14 @@ angular.module('naveapps.controllers', ['firebase'])
 	};
 
 	$scope.addLikes = function (ofertas){
-			$scope.likes.$save(ofertas);
-			//ofertas.likes += 1;
+		ofertas.likes = false;
+		ofertas.likes += 1;
 	};
 
 	$scope.minusLikes = function (ofertas){
 		ofertas.likes = true;
 		ofertas.likes -= 1;
-	};
+	}
 
 	function loadCloudData(){
 		$http.get('data/vereadores.json')
@@ -56,6 +54,25 @@ angular.module('naveapps.controllers', ['firebase'])
 	function unsaveData(){
 		localStorage.removeItem('naveapps', angular.toJson($scope.naveapps));
 	};
+})
+
+.controller('AuthCtrl', function($scope, $rootScope){
+	$scope.login = function(){
+		var ref = new Firebase('https://naveorg.firebaseio.com');
+		ref.authWithOAuthPopup('facebook', function(error, authData){
+			if (error) {
+				alert('Login Falhou');
+			}else{
+				alert('Login Efetuado com sucesso!', authData);
+				window.location = "#/";
+			}
+			$rootScope.authData = authData;
+		}, {
+			remember: "sessionOnly",
+			scope: "email,user_likes"
+		});
+	}
+		
 })
 
 .controller('ChatCtrl', function($rootScope, $location){

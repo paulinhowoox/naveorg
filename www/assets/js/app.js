@@ -8,9 +8,9 @@ angular.module('naveapps', ['naveapps.controllers', 'ngRoute', 'firebase'])
 		templateUrl: '/www/chat.html',
 		controller: 'ChatCtrl'
 	})
-})
 
-.factory('Likes', function ($firebaseArray) {
-	var itemRef = new Firebase("https://naveorg.firebaseio.com/");
-	return $firebaseArray(itemRef);
+	.when('/chat', {
+		templateUrl: '/www/graficos.html',
+		controller: 'HomeCtrl'
+	})
 })

@@ -6,26 +6,39 @@
 	<title>Nave Org</title>
 	<link rel="stylesheet" href="assets/css/styles.min.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Angular Material style sheet -->
+  	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+
 </head>
-<body ng-controller="HomeCtrl">
+	<style>
+		.carddemoBasicUsage md-card {
+  			min-height: 250px; 
+  		}
+
+		md-card>:not(md-card-content) img, md-card>img {
+		  box-sizing : border-box;
+		}
+	</style>
+</head>
+<body ng-controller="HomeCtrl" ng-cloak>
 	<div ng-include="'components/navbar/navbar.html'"></div>
 	
 	<div class="row">
 		<div class="col s12 m4 animated bounceIn" ng-repeat="naveinfo in naveapps | orderBy:'-likes'">
-			<div class="card">
+			<div class="card" style="height: 456px;">
 			    <div class="card-image waves-effect waves-block waves-light" style="height: 286px;">
 			      <img class="activator" ng-src="{{ naveinfo.imagem }}" style="height: 300px;">
 			    </div>
-			    <div class="card-content">
-			    	<span class="card-title activator grey-text text-darken-4">{{ naveinfo.nome | limitTo:15  }} <small>({{ naveinfo.likes }} curtida(s))</small><i class="mdi-navigation-more-vert right"></i></span>
+			    <div class="card-content" ng-controller="AuthCtrl">
+			    	<span class="card-title activator grey-text text-darken-4">{{ naveinfo.nome | limitTo: 12  }}... <small>({{ naveinfo.likes }} curtida(s)</small><i class="mdi-navigation-more-vert right"></i></span>
 			    	<p>
-			    		<a href="javascript:void(null);" ng-click="addLikes(naveinfo) || saveData()" style="margin: 20px;">
+			    		<a href="javascript:void(null);" ng-click="addLikes(naveinfo) && saveData()" style="margin: 20px;">
                             <i class="material-icons">thumb_up</i>
                         </a>
-                        <!-- <a href="javascript:void(null);" ng-click="minusLikes(naveinfo) && unsaveData()" style="color: red;">
+                        <a href="javascript:void(null);" ng-click="minusLikes(naveinfo) && unsaveData()" style="color: red;">
                             <i class="material-icons">thumb_down</i>
-                        </a> -->
-			    		<a href="javascript:void(null)" class="right">Editar</a>
+                        </a>
+			    		<a href="javascript:void(null);" class="right">Ver mais</a>
 			    	</p>
 			    </div>
 			    <div class="card-reveal">
@@ -37,6 +50,7 @@
 			    	<p>Sala: {{ naveinfo.sala }}</p>
 			    	<p>Telefone: {{ naveinfo.telefone }}</p>
 			    	<p>E-mail: {{ naveinfo.email }}</p>
+			    	<p>Acesse para saber todas as ações: <a target="_blank" ng-href="https://nave.wordpress.com/category/{{ naveinfo.link }}/">{{ naveinfo.nome }}</p>
 			    </div>
 			</div>
 		</div>
@@ -48,9 +62,23 @@
 		      	<li><a class="btn-floating red" href="data/vereadores.csv"><i class="large mdi-content-save"></i></a></li>
 		      	<li><a class="btn-floating green" ng-click="loadLocalData()"><i class="large mdi-file-folder"></i></a></li>
 		      	<li><a class="btn-floating blue" ng-click="loadCloudData()"><i class="large mdi-file-cloud-circle"></i></a></li>
+		      	<li><a class="btn-floating blue waves-effect waves-light btn modal-trigger" href="#modal1"><i class="material-icons">supervisor_account</i></a></li>
 		    </ul>
 		</div>
 		<div ng-view></div>
+		 <!-- Modal Trigger -->
+  		<!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
+
+		<!-- Modal Structure -->
+		<div id="modal1" class="modal" ng-controller="AuthCtrl">
+			<div class="modal-content">
+				<h4>Modal Header</h4>
+				<p>A bunch of text</p>
+			</div>
+			<div class="modal-footer">
+				<a ng-click="login('facebook')" class=" modal-action modal-close waves-effect waves-green btn-flat"><div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="true"></div></a>
+			</div>
+		</div>
 	</div>
 
 	<!-- Carregamento dos scripts -->
@@ -62,5 +90,16 @@
 	
 	<script src="assets/js/app.js"></script>
 	<script src="assets/js/controllers/naveappctrl.js"></script>
+	<div id="fb-root"></div>
+	<script>
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.5&appId=282752038584084";
+				fjs.parentNode.insertBefore(js, fjs);
+		}
+		(document, 'script', 'facebook-jssdk'));
+	</script>
 </body>
 </html>
